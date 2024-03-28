@@ -30,6 +30,16 @@
 GitHub Pages: <https://github.com/dbdb8/web-browser-idea-plugin>
 <br/>
 
+## 下载插件
+<a href="https://github.com/dbdb8/web-browser-idea-plugin/releases/download/1.0-SNAPSHOT/web_browser-1.0-SNAPSHOT.zip" alt="zip plugin">点击跳转下载</a>
+
+**本地安装**
+
+> IDEA > Preferences > Plugins
+
+![安装图](docs/screenshot-20240328-170528.png)
+
+选择下载的文件安装 `web_browser-xxx.zip` 
 
 ## 项目结构
 
@@ -89,10 +99,3 @@ intellij {
 打包完成后的文件
 `build/distributions/web_browser-xxx.zip`
 
-**安装**
-
-> IDEA > Preferences > Plugins
-
-![安装图](docs/screenshot-20240328-170528.png)
-
-选择打包后的文件安装 `build/distributions/web_browser-xxx.zip`
