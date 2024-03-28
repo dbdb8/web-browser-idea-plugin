@@ -3,15 +3,15 @@
 </div>
 
 <h1 align="center">
-  IDEA Web 浏览器插件
+  IDEA Web Browser plugin
 </h1>
 
 <p align="center">
-  <a href="./docs/README_EN.md">English</a>
+  <a href="/docs/README_CN.md">中文</a>
 </p>
 
 <p align="center">
-  支持丰富的功能：访问配置主页、添加书签、书签管理、前进、后退、刷新等。
+  Supports rich functions: access configuration homepage, add bookmarks, bookmark management, forward, backward, refresh, etc.
 </p>
 
 <p align="center">
@@ -19,63 +19,63 @@
 </p>
 
 <h3 align="center">
-  浏览器插件效果图
+  renderings
 </h3>
 <div align=center>
 <img  src="docs/20240328-165043.jpg"/>
 </div>
 
-## 📸 在线访问
+## 📸 Online Access
 
 GitHub Pages: <https://github.com/dbdb8/web-browser-idea-plugin>
 <br/>
 
-## 下载插件
-<a href="https://github.com/dbdb8/web-browser-idea-plugin/releases/download/1.0-SNAPSHOT/web_browser-1.0-SNAPSHOT.zip" alt="zip plugin">点击跳转下载</a>
+## Download Plugin
+<a href="https://github.com/dbdb8/web-browser-idea-plugin/releases/download/1.0-SNAPSHOT/web_browser-1.0-SNAPSHOT.zip" alt="zip plugin">Click to jump to download</a>
 
-**本地安装**
+**Local installation**
 
-> IDEA > Preferences > Plugins
+> IDEA > File > Settings > Plugins
 
-![安装图](docs/screenshot-20240328-170528.png)
+![instructions](docs/screenshot-20240328-170528.png)
 
-选择下载的文件安装 `web_browser-xxx.zip` 
+Select the downloaded file to install `web_browser-xxx.zip` 
 
-## 项目结构
+## Project Structure
 
 ```
 
-│─build.gradle.kts //gradle配置文件
+│─build.gradle.kts //gradle Configuration file
 └─src
     └─main
         ├─java
         │  └─xyz
         │      └─read1314
         │          └─web_browser
-        │              ├─core        //核心功能处理
+        │              ├─core        //Core function processing
         │              │  ├─entity
         │              │  ├─enums
         │              │  ├─listener
         │              │  ├─renderer
         │              │  ├─service
         │              │  └─util
-        │              ├─menu       //菜单事件处理
+        │              ├─menu       //Menu event handling
         │              ├─message
-        │              └─ui         //UI绘制
+        │              └─ui         //UI drawing
         └─resources
-            ├─plugin.xml            //插件配置
-            └─pluginIcon.svg        //插件logo
+            ├─plugin.xml            //Plugin configuration
+            └─pluginIcon.svg        //Plugin logo
 
 ```
 
 
-## 快速部署
+## Rapid Deployment
 
-### IDEA插件端
+### IDEA Plugin Development
 
-#### 修改IDEA版本 
+#### Modify IDEA version 
 
-修改 `build.gradle` 配置文件，将 `IDEA` 版本号改为你想使用的版本（仅限开发调试阶段）
+Modify the `build.gradle.kts` configuration file and change the `IDEA` version number to the version you want to use (only in the development and debugging phase)
 
 ```
 intellij {
@@ -83,19 +83,19 @@ intellij {
 }
 ```
 
-#### 本地运行
+#### Run Local
 
 > Gradle > Tasks > intellij > runIde
 
-![编译图](docs/20240328-165855.jpg)
+![Compile graph](docs/20240328-165855.jpg)
 
 
 **打包**
 
 > Gradle > Tasks > build > assemble
 
-![打包图](docs/20240328-170257.jpg)
+![Packing graph](docs/20240328-170257.jpg)
 
-打包完成后的文件
+packaged file
 `build/distributions/web_browser-xxx.zip`
 
